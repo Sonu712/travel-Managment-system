@@ -1,0 +1,34 @@
+create database project;
+use project;
+create table signup(user varchar(20), name varchar(20), password varchar(20), security varchar(20), answer varchar(20));
+desc signup;
+select * from signup;   
+create table addperson(username varchar(20), id varchar(20), number varchar(20), name varchar(20), gender varchar(20),country varchar(20),address varchar(70),email varchar(20),phone varchar(20));
+
+desc addperson;
+select * from addperson; 
+
+
+create table bookpack(username varchar(20), package varchar(20), total_person varchar(20), id varchar(20), number varchar(20),phone varchar(20),amount varchar(70));
+desc bookpack;
+select * from bookpack; 
+
+create table bhotel(name varchar(30), costperperson varchar(30), acroom varchar(20), foodinclude varchar(30));
+insert into bhotel values('Ritz-Carlton Hotel','2500','4000','1200');
+insert into bhotel values('Marriott','2000','2500','1000');
+insert into bhotel values('The Luxury Collection Hotels & Resorts','3000','4500','1800');
+insert into bhotel values('St Regis Hotels','1500','1400','1000');
+insert into bhotel values('Hyatt','2000','3000','1100');
+insert into bhotel values('Rosewood Hotels & Resorts','3000','6000','900');
+insert into bhotel values('Aman Resorts','5000','1000','1400');
+insert into bhotel values('Four Seasons','3200','2000','1300');
+insert into bhotel values('RIver view hotel','4000','2000','1000');
+insert into bhotel values('Taj hotel','1000','1000','900');
+
+select * from bhotel;
+
+
+create table bookhotel(username varchar(20), hotel varchar(20), total_person varchar(20),NO_days varchar(20),ac_non_ac varchar(20), 
+foodinclude varchar(20), id varchar(20), number varchar(20),phone varchar(20),amount varchar(70));
+desc bookhotel;
+select * from bookhotel;
