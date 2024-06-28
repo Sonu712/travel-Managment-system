@@ -89,8 +89,8 @@ public class Login extends JFrame implements ActionListener{
                 String username = txt.getText();
                 String password = txt1.getText();
                 
-               String query ="Select * from signup where password = '"+password+"' AND username = '"+username+"' ";
-               Conn c= new Conn();
+               String query ="Select * from signup where username = '"+username+"' AND password = '"+password+"' ";
+               Conn c = new Conn();
                ResultSet rs = c.st.executeQuery(query);
                if(rs.next()){
                    setVisible(false);

@@ -173,7 +173,7 @@ public class Add extends JFrame implements ActionListener{
         
         try {
             Conn c =new Conn();
-            ResultSet rs = c.st.executeQuery("select * from signup where username='"+username+"' ");
+            ResultSet rs = c.st.executeQuery("select * from signup where username ='"+username+"' ");
             while(rs.next()){
                 username1.setText(rs.getString("username"));
                 name1.setText(rs.getString("name"));
@@ -225,7 +225,7 @@ public class Add extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args) {
-        new Add("Abhi12345");
+        new Add("sk123");
     }
     
 }
